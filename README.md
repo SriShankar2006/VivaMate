@@ -117,3 +117,33 @@ Mobile version
 Export performance reports
 
 Keyword-based technical accuracy scoring
+
+VivaMate/
+│
+├── main.py                 # App entry point
+│
+├── ui/
+│   ├── home.py             # Home screen UI
+│   ├── question_screen.py  # Question + timer
+│   ├── evaluation.py       # Auto-evaluation screen
+│
+├── audio/
+│   ├── recorder.py         # Voice recording logic
+│   ├── playback.py         # Audio playback
+│
+├── evaluation_engine/
+│   ├── speech_to_text.py   # Voice → Text
+│   ├── confidence.py       # Confidence score
+│   ├── fluency.py          # Fluency score
+│   ├── clarity.py          # Clarity score
+│   ├── keywords.py         # Keyword matching
+│
+├── data/
+│   ├── questions.json      # Viva questions + keywords
+│   └── vivamate.db         # SQLite database
+│
+├── recordings/             # Saved audio files
+│
+└── utils/
+    ├── timer.py            # Countdown timer
+    └── db.py               # Database handling
